@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>URL Encoder</title>
+</head>
+<body>
+<h1>URL Encoder</h1>
+
+<!-- Форма для ввода строки -->
+<form action="/api/url/encode" method="get">
+    <label for="input">Enter text to encode:</label>
+    <input type="text" id="input" name="input" th:value="${originalInput}" />
+    <button type="submit">Encode</button>
+</form>
+
+<!-- Вывод результата -->
+<div th:if="${encodedResult != null}">
+    <h2>Encoded Result:</h2>
+    <p th:text="${encodedResult}"></p>
+</div>
+
+</body>
+</html>

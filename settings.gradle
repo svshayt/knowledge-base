@@ -1,0 +1,3 @@
+rootProject.name = 'knowledge-base'
+include 'knowledge-base-impl'
+
