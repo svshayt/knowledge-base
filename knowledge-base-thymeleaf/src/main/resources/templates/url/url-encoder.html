@@ -7,7 +7,7 @@
 <h1>URL Encoder</h1>
 
 <!-- Форма для ввода строки -->
-<form action="/api/url/encode" method="get">
+<form action="/thymeleaf/url/encode" method="get">
     <label for="input">Enter text to encode:</label>
     <input type="text" id="input" name="input" th:value="${originalInput}" />
     <button type="submit">Encode</button>
